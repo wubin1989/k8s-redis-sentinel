@@ -1,0 +1,10 @@
+spring:
+  redis:
+    password: redis123
+    sentinel:
+      master: mymaster
+      nodes:
+        - 192.168.1.1:5000
+      password: xxxxxx
+    lettuce:
+      shutdown-timeout: 200ms

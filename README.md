@@ -1,1 +1,1 @@
-# k8s-redis-sentinel
+# 基于k8s的Redis哨兵高可用部署方案

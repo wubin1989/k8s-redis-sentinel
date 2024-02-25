@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config-map
+data:
+  REDIS_NODES: "redis-0.redis,redis-1.redis,redis-2.redis"
+
+  redis.conf: |
+    bind 0.0.0.0
+    protected-mode no
+    port 6379
+    tcp-backlog 511
+    timeout 10
+    tcp-keepalive 30
+    daemonize no
+    supervised no
+    pidfile "/var/run/redis_6379.pid"
+    loglevel notice
+    logfile ""
+    databases 16
+    always-show-logo yes
+    save ""
+    stop-writes-on-bgsave-error yes
+    rdbcompression yes
+    rdbchecksum yes
+    rdb-del-sync-files no
+    dir "/data"
+    replica-serve-stale-data yes
+    replica-read-only yes
+    repl-diskless-sync no
+    repl-diskless-sync-delay 5
+    repl-diskless-load disabled
+    appendonly no
+    repl-disable-tcp-nodelay no
+    replica-priority 100
+    acllog-max-len 128
