@@ -1,3 +1,4 @@
+# 基于k8s的Redis哨兵高可用部署方案
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ### TOC
